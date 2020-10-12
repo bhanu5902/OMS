@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<IdmsAdapterConfig>
+  <!-- Path to log file -->
+  <LogFilePath>%IDMS_ROOT%\log\CommClient.log</LogFilePath>
+
+  <!-- Name or IP address of host machine listening for client connections -->
+  <ListenerHost>localhost</ListenerHost>
+
+  <!-- TCP/IP port number on which ListenerHost is listening for client connections -->
+  <ListenerPort>5036</ListenerPort>
+
+  <!-- Indicates whether to check for security token authenticity/expiration -->
+  <CheckMessageSecurity>true</CheckMessageSecurity>
+
+  <!-- Indicates whether to use a credential file to specify the shared key and user SIDs -->
+  <UseCredentialFile>false</UseCredentialFile>
+
+  <!-- Path of the credential file that specifies the shared key and user SIDs -->
+  <CredentialFilePath>..\..\..\AdapterSamples\Config\CrewServerCredentialInfo.xml</CredentialFilePath>
+
+  <!-- Indicates whether to accept any user SID -->
+  <AllowUnregisteredSids>false</AllowUnregisteredSids>
+
+  <!-- Number of seconds before received messages are considered expired -->
+  <TimeToLive>300</TimeToLive>
+
+  <!-- Interval between periodic hello messages to check that the connection is still open -->
+  <HelloIntervalSeconds>30</HelloIntervalSeconds>
+
+  <ConnectionDebug>true</ConnectionDebug>
+
+  <AppName>AMI Server</AppName>
+
+</IdmsAdapterConfig>

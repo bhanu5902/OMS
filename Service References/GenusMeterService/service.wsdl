@@ -1,0 +1,230 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="GenusHES" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import schemaLocation="" namespace="http://schemas.datacontract.org/2004/07/Genus.SmartMeter.DomainEntities.UserDefinedEntities" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IGenusHES_PerformPeakLoadManagementForMultipleMeters_InputMessage">
+    <wsdl:part name="parameters" element="tns:PerformPeakLoadManagementForMultipleMeters" />
+  </wsdl:message>
+  <wsdl:message name="IGenusHES_PerformPeakLoadManagementForMultipleMeters_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PerformPeakLoadManagementForMultipleMetersResponse" />
+  </wsdl:message>
+  <wsdl:message name="IGenusHES_PerformPeakLoadManagementForSingleMeter_InputMessage">
+    <wsdl:part name="parameters" element="tns:PerformPeakLoadManagementForSingleMeter" />
+  </wsdl:message>
+  <wsdl:message name="IGenusHES_PerformPeakLoadManagementForSingleMeter_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PerformPeakLoadManagementForSingleMeterResponse" />
+  </wsdl:message>
+  <wsdl:message name="IGenusHES_OnDemandReadRequest_InputMessage">
+    <wsdl:part name="parameters" element="tns:OnDemandReadRequest" />
+  </wsdl:message>
+  <wsdl:message name="IGenusHES_OnDemandReadRequest_OutputMessage">
+    <wsdl:part name="parameters" element="tns:OnDemandReadRequestResponse" />
+  </wsdl:message>
+  <wsdl:message name="IGenusHES_OnDemandConnectDisconnectRequest_InputMessage">
+    <wsdl:part name="parameters" element="tns:OnDemandConnectDisconnectRequest" />
+  </wsdl:message>
+  <wsdl:message name="IGenusHES_OnDemandConnectDisconnectRequest_OutputMessage">
+    <wsdl:part name="parameters" element="tns:OnDemandConnectDisconnectRequestResponse" />
+  </wsdl:message>
+  <wsdl:message name="IGenusHES_GetRequestStatus_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetRequestStatus" />
+  </wsdl:message>
+  <wsdl:message name="IGenusHES_GetRequestStatus_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetRequestStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="IGenusHES_SetTodConfiguration_InputMessage">
+    <wsdl:part name="parameters" element="tns:SetTodConfiguration" />
+  </wsdl:message>
+  <wsdl:message name="IGenusHES_SetTodConfiguration_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SetTodConfigurationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IGenusHES_SetMaxDemandIntegrationPeriod_InputMessage">
+    <wsdl:part name="parameters" element="tns:SetMaxDemandIntegrationPeriod" />
+  </wsdl:message>
+  <wsdl:message name="IGenusHES_SetMaxDemandIntegrationPeriod_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SetMaxDemandIntegrationPeriodResponse" />
+  </wsdl:message>
+  <wsdl:message name="IGenusHES_ResetBillForMeter_InputMessage">
+    <wsdl:part name="parameters" element="tns:ResetBillForMeter" />
+  </wsdl:message>
+  <wsdl:message name="IGenusHES_ResetBillForMeter_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ResetBillForMeterResponse" />
+  </wsdl:message>
+  <wsdl:message name="IGenusHES_SetAutoBillingDateForMeters_InputMessage">
+    <wsdl:part name="parameters" element="tns:SetAutoBillingDateForMeters" />
+  </wsdl:message>
+  <wsdl:message name="IGenusHES_SetAutoBillingDateForMeters_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SetAutoBillingDateForMetersResponse" />
+  </wsdl:message>
+  <wsdl:message name="IGenusHES_GetLatestPingTimeForMeter_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLatestPingTimeForMeter" />
+  </wsdl:message>
+  <wsdl:message name="IGenusHES_GetLatestPingTimeForMeter_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLatestPingTimeForMeterResponse" />
+  </wsdl:message>
+  <wsdl:message name="IGenusHES_GetVoltEventForMeter_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetVoltEventForMeter" />
+  </wsdl:message>
+  <wsdl:message name="IGenusHES_GetVoltEventForMeter_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetVoltEventForMeterResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IGenusHES">
+    <wsdl:operation name="PerformPeakLoadManagementForMultipleMeters">
+      <wsdl:input wsaw:Action="http://tempuri.org/IGenusHES/PerformPeakLoadManagementForMultipleMeters" message="tns:IGenusHES_PerformPeakLoadManagementForMultipleMeters_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IGenusHES/PerformPeakLoadManagementForMultipleMetersResponse" message="tns:IGenusHES_PerformPeakLoadManagementForMultipleMeters_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="PerformPeakLoadManagementForSingleMeter">
+      <wsdl:input wsaw:Action="http://tempuri.org/IGenusHES/PerformPeakLoadManagementForSingleMeter" message="tns:IGenusHES_PerformPeakLoadManagementForSingleMeter_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IGenusHES/PerformPeakLoadManagementForSingleMeterResponse" message="tns:IGenusHES_PerformPeakLoadManagementForSingleMeter_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="OnDemandReadRequest">
+      <wsdl:input wsaw:Action="http://tempuri.org/IGenusHES/OnDemandReadRequest" message="tns:IGenusHES_OnDemandReadRequest_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IGenusHES/OnDemandReadRequestResponse" message="tns:IGenusHES_OnDemandReadRequest_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="OnDemandConnectDisconnectRequest">
+      <wsdl:input wsaw:Action="http://tempuri.org/IGenusHES/OnDemandConnectDisconnectRequest" message="tns:IGenusHES_OnDemandConnectDisconnectRequest_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IGenusHES/OnDemandConnectDisconnectRequestResponse" message="tns:IGenusHES_OnDemandConnectDisconnectRequest_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRequestStatus">
+      <wsdl:input wsaw:Action="http://tempuri.org/IGenusHES/GetRequestStatus" message="tns:IGenusHES_GetRequestStatus_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IGenusHES/GetRequestStatusResponse" message="tns:IGenusHES_GetRequestStatus_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SetTodConfiguration">
+      <wsdl:input wsaw:Action="http://tempuri.org/IGenusHES/SetTodConfiguration" message="tns:IGenusHES_SetTodConfiguration_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IGenusHES/SetTodConfigurationResponse" message="tns:IGenusHES_SetTodConfiguration_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SetMaxDemandIntegrationPeriod">
+      <wsdl:input wsaw:Action="http://tempuri.org/IGenusHES/SetMaxDemandIntegrationPeriod" message="tns:IGenusHES_SetMaxDemandIntegrationPeriod_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IGenusHES/SetMaxDemandIntegrationPeriodResponse" message="tns:IGenusHES_SetMaxDemandIntegrationPeriod_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ResetBillForMeter">
+      <wsdl:input wsaw:Action="http://tempuri.org/IGenusHES/ResetBillForMeter" message="tns:IGenusHES_ResetBillForMeter_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IGenusHES/ResetBillForMeterResponse" message="tns:IGenusHES_ResetBillForMeter_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SetAutoBillingDateForMeters">
+      <wsdl:input wsaw:Action="http://tempuri.org/IGenusHES/SetAutoBillingDateForMeters" message="tns:IGenusHES_SetAutoBillingDateForMeters_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IGenusHES/SetAutoBillingDateForMetersResponse" message="tns:IGenusHES_SetAutoBillingDateForMeters_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLatestPingTimeForMeter">
+      <wsdl:input wsaw:Action="http://tempuri.org/IGenusHES/GetLatestPingTimeForMeter" message="tns:IGenusHES_GetLatestPingTimeForMeter_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IGenusHES/GetLatestPingTimeForMeterResponse" message="tns:IGenusHES_GetLatestPingTimeForMeter_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetVoltEventForMeter">
+      <wsdl:input wsaw:Action="http://tempuri.org/IGenusHES/GetVoltEventForMeter" message="tns:IGenusHES_GetVoltEventForMeter_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IGenusHES/GetVoltEventForMeterResponse" message="tns:IGenusHES_GetVoltEventForMeter_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="soap" type="tns:IGenusHES">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="PerformPeakLoadManagementForMultipleMeters">
+      <soap:operation soapAction="http://tempuri.org/IGenusHES/PerformPeakLoadManagementForMultipleMeters" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PerformPeakLoadManagementForSingleMeter">
+      <soap:operation soapAction="http://tempuri.org/IGenusHES/PerformPeakLoadManagementForSingleMeter" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OnDemandReadRequest">
+      <soap:operation soapAction="http://tempuri.org/IGenusHES/OnDemandReadRequest" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OnDemandConnectDisconnectRequest">
+      <soap:operation soapAction="http://tempuri.org/IGenusHES/OnDemandConnectDisconnectRequest" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRequestStatus">
+      <soap:operation soapAction="http://tempuri.org/IGenusHES/GetRequestStatus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetTodConfiguration">
+      <soap:operation soapAction="http://tempuri.org/IGenusHES/SetTodConfiguration" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetMaxDemandIntegrationPeriod">
+      <soap:operation soapAction="http://tempuri.org/IGenusHES/SetMaxDemandIntegrationPeriod" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ResetBillForMeter">
+      <soap:operation soapAction="http://tempuri.org/IGenusHES/ResetBillForMeter" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetAutoBillingDateForMeters">
+      <soap:operation soapAction="http://tempuri.org/IGenusHES/SetAutoBillingDateForMeters" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLatestPingTimeForMeter">
+      <soap:operation soapAction="http://tempuri.org/IGenusHES/GetLatestPingTimeForMeter" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetVoltEventForMeter">
+      <soap:operation soapAction="http://tempuri.org/IGenusHES/GetVoltEventForMeter" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="GenusHES">
+    <wsdl:port name="soap" binding="tns:soap">
+      <soap:address location="http://172.12.12.103:8098/GenusHES.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

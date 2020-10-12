@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="8b0d94a2-b5b1-421f-8dc5-ca432120d6f6" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://172.12.12.103:8098/GenusHES.svc/mex" Protocol="mex" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="6ac7604d-1d32-4c7f-8477-946ffb245f8a" SourceId="1" SourceUrl="http://172.12.12.103:8098/GenusHES.svc/mex" />
+    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="d5552e06-cec4-485f-93a1-b91729a138c4" SourceId="1" SourceUrl="http://172.12.12.103:8098/GenusHES.svc/mex" />
+    <MetadataFile FileName="service1.xsd" MetadataType="Schema" ID="f57aaa0a-b24d-49e1-90a1-2405d4fc1ebd" SourceId="1" SourceUrl="http://172.12.12.103:8098/GenusHES.svc/mex" />
+    <MetadataFile FileName="Arrays.xsd" MetadataType="Schema" ID="786490b0-7359-417b-a47c-6f1b00f1b703" SourceId="1" SourceUrl="http://172.12.12.103:8098/GenusHES.svc/mex" />
+    <MetadataFile FileName="Genus.SmartMeter.DomainEntities.UserDefinedEntities.xsd" MetadataType="Schema" ID="50ed3adb-7e95-4f9b-92ef-a3f30785d129" SourceId="1" SourceUrl="http://172.12.12.103:8098/GenusHES.svc/mex" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
