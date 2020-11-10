@@ -154,6 +154,9 @@
     <None Include="App.config">
       <SubType>Designer</SubType>
     </None>
+    <None Include="bin\Debug\AdapterSamples.exe.config" />
+    <None Include="bin\Debug\AdapterSamples.vshost.exe.config" />
+    <None Include="bin\Debug\AdapterSamples.vshost.exe.manifest" />
     <None Include="packages.config" />
     <None Include="Service References\GenusMeterService\AdapterSamples.GenusMeterService.MeterPingStatusEntity.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
@@ -176,6 +179,26 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="bin\Debug\AdapterSamples.exe" />
+    <Content Include="bin\Debug\AdapterSamples.pdb" />
+    <Content Include="bin\Debug\AdapterSamples.vshost.exe" />
+    <Content Include="bin\Debug\IdmsAdapter.dll" />
+    <Content Include="bin\Debug\IDMSTokenProvider.dll" />
+    <Content Include="bin\Debug\Microsoft.Data.Edm.dll" />
+    <Content Include="bin\Debug\Microsoft.Data.Edm.xml" />
+    <Content Include="bin\Debug\Microsoft.Data.OData.dll" />
+    <Content Include="bin\Debug\Microsoft.Data.OData.xml" />
+    <Content Include="bin\Debug\Microsoft.Data.Services.Client.dll" />
+    <Content Include="bin\Debug\Microsoft.Data.Services.Client.xml" />
+    <Content Include="bin\Debug\Microsoft.Data.Services.dll" />
+    <Content Include="bin\Debug\Microsoft.Data.Services.xml" />
+    <Content Include="bin\Debug\NetUtil.dll" />
+    <Content Include="bin\Debug\OmsUtilities.dll" />
+    <Content Include="bin\Debug\OmsUtilities.resources.dll" />
+    <Content Include="bin\Debug\OptUtil.dll" />
+    <Content Include="bin\Debug\SerializedFile.dll" />
+    <Content Include="bin\Debug\System.Spatial.dll" />
+    <Content Include="bin\Debug\System.Spatial.xml" />
     <Content Include="Config\CallAdapterConfig.xml">
       <SubType>Designer</SubType>
     </Content>
@@ -194,6 +217,12 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadataStorage Include="Service References\GenusMeterService\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Debug\Log\" />
+    <Folder Include="bin\Release\" />
+    <Folder Include="bin\x64\Debug\" />
+    <Folder Include="bin\x64\Release\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
